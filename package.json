@@ -1,0 +1,19 @@
+{
+  "name": "zealthy-emr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini-EMR and Patient Portal – Full Stack Application",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:client",
+    "start": "cd server && npm start",
+    "seed": "cd server && node seed.js",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

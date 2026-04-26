@@ -1,0 +1,18 @@
+app = "zealthy-emr"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "4000"
+  NODE_ENV = "production"
+  DB_PATH = "/data/zealthy.db"
+
+[http_service]
+  internal_port = 4000
+  force_https = true
+
+[[mounts]]
+  source = "zealthy_data"
+  destination = "/data"
