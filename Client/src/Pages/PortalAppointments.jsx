@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { api } from '../utils/api';
-import { getUpcomingOccurrences } from '../utils/dates';
-import { Spinner, EmptyState } from '../components/UI';
+import { api } from '../Utils/api';
+import { getUpcomingOccurrences } from '../Utils/dates';
+import { Spinner, EmptyState } from '../Components/UI';
 import { Calendar, Clock, RefreshCw, MapPin } from 'lucide-react';
 import { addMonths, format, startOfDay, isToday, isTomorrow, isThisWeek } from 'date-fns';
 

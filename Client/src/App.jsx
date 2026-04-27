@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { AuthProvider, useAuth } from './Context/AuthContext';
 
 // Pages
-import LoginPage from './pages/LoginPage';
-import PortalLayout from './pages/PortalLayout';
-import PortalDashboard from './pages/PortalDashboard';
-import PortalAppointments from './pages/PortalAppointments';
-import PortalPrescriptions from './pages/PortalPrescriptions';
-import AdminLayout from './pages/AdminLayout';
-import AdminPatients from './pages/AdminPatients';
-import AdminPatientDetail from './pages/AdminPatientDetail';
+import LoginPage from './Pages/LoginPage';
+import PortalLayout from './Pages/PortalLayout';
+import PortalDashboard from './Pages/PortalDashboard';
+import PortalAppointments from './Pages/PortalAppointments';
+import PortalPrescriptions from './Pages/PortalPrescriptions';
+import AdminLayout from './Pages/AdminLayout';
+import AdminPatients from './Pages/AdminPatients';
+import AdminPatientDetail from './Pages/AdminPatientDetail';
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();

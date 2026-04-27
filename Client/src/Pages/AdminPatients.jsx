@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { api } from '../utils/api';
-import { Spinner, EmptyState, Modal } from '../components/UI';
+import { api } from '../Utils/api';
+import { Spinner, EmptyState, Modal } from '../Components/UI';
 import { Users, Plus, Search, Calendar, Pill, ChevronRight, Eye, EyeOff } from 'lucide-react';
 
 export default function AdminPatients() {

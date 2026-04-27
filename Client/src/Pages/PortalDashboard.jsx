@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { api } from '../utils/api';
-import { getUpcomingOccurrences, getUpcomingRefills, formatDateTime, formatDate } from '../utils/dates';
-import { Spinner, EmptyState } from '../components/UI';
+import { api } from '../Utils/api';
+import { getUpcomingOccurrences, getUpcomingRefills, formatDateTime, formatDate } from '../Utils/dates';
+import { Spinner, EmptyState } from '../Components/UI';
 import { Calendar, Pill, User, ArrowRight, Clock, RefreshCw } from 'lucide-react';
 import { addDays, format } from 'date-fns';
 

@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../Context/AuthContext';
 import { Heart, LayoutDashboard, Calendar, Pill, LogOut } from 'lucide-react';
 
 export default function PortalLayout() {

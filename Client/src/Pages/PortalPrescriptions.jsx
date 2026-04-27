@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { api } from '../utils/api';
-import { getUpcomingRefills } from '../utils/dates';
-import { Spinner, EmptyState } from '../components/UI';
+import { api } from '../Utils/api';
+import { getUpcomingRefills } from '../Utils/dates';
+import { Spinner, EmptyState } from '../Components/UI';
 import { Pill, RefreshCw, Package, Hash } from 'lucide-react';
 import { addMonths, format, startOfDay } from 'date-fns';
 
