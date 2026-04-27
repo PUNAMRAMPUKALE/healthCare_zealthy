@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { api } from '../Utils/api';
-import { formatDateTime, formatDate } from '../Utils/dates';
+import { api } from '../Utils/Api';
+import { formatDateTime, formatDate } from '../Utils/Dates';
 import { Spinner, Modal, ConfirmDialog, EmptyState } from '../Components/UI';
 import {
   ArrowLeft, Calendar, Pill, Plus, Pencil, Trash2, User,
